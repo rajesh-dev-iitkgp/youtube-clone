@@ -1,16 +1,53 @@
-# React + Vite
+# YouTube Clone 🎥
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A feature-rich frontend YouTube clone built using React and the YouTube Data API.
 
-Currently, two official plugins are available:
+## Features
+- Home feed with trending videos
+- Collapsible sidebar with category navigation
+- Video playback page with related videos
+- Search functionality with dynamic results
+- In-video navigation to other videos
+- Comment section and channel details
+- Responsive layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots
 
-## React Compiler
+### Home Page
+![Home Page](screenshots/home.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Sidebar & Categories
+![Categories](screenshots/categories.png)
 
-## Expanding the ESLint configuration
+### Video Player
+![Video Player](screenshots/video_player.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Search Results
+![Search Results](screenshots/search.png)
+
+
+## Tech Stack
+- React
+- Vite
+- React Router
+- YouTube Data API v3
+
+## API Key & Running Locally
+
+This project uses the YouTube Data API v3.
+
+For security reasons, the API key used in this repository is restricted
+to specific domains (localhost for the author and the live demo domain).
+If you fork or clone this repository, API requests may not work by default.
+
+To run this project fully on your own machine:
+
+1. Create your own YouTube Data API v3 key from Google Cloud Console.
+2. Replace the existing API key in the code with your own key.
+3. Update the API key restrictions to allow your localhost (e.g., http://localhost:5173).
+4. Install dependencies and start the development server:
+   ```bash
+   npm install
+   npm run dev
+
+
