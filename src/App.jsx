@@ -12,7 +12,7 @@ function App(){
 
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/youtube-clone">
         <Navbar setSidebar={setSidebar}/>
         <Routes>
           <Route path="/" element={<Home sidebar={sidebar} category={category} setCategory={setCategory}/>}/>
